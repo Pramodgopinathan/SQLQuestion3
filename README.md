@@ -87,3 +87,4 @@ SELECT sb1,sb2,sb3
   FROM (SELECT s1 AS sb1, s2 AS sb2, s3*2 AS sb3 FROM t1) AS sb
   WHERE sb1 > 1;
 ```
+![](https://github.com/Pramodgopinathan/SQLQuestion3/blob/a90bf7377a68d40fa30683ddd15fc158802921a3/SQL%20Data.PNG)
