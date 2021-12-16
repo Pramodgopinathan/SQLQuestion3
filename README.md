@@ -77,5 +77,13 @@ The SQL ORDER BY clause is used to sort the data in ascending or descending orde
 
 The SQL GROUP BY clause is used in collaboration with the SELECT statement to arrange identical data into groups. This GROUP BY clause follows the WHERE clause in a SELECT statement and precedes the ORDER BY clause. <br />
 
+## Sub-Query
 
-
+``` SQL
+CREATE TABLE t1 (s1 INT, s2 CHAR(5), s3 FLOAT);
+INSERT INTO t1 VALUES (1,'1',1.0);
+INSERT INTO t1 VALUES (2,'2',2.0);
+SELECT sb1,sb2,sb3
+  FROM (SELECT s1 AS sb1, s2 AS sb2, s3*2 AS sb3 FROM t1) AS sb
+  WHERE sb1 > 1;
+```
